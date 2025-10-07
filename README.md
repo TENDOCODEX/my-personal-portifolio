@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rutendo Sengera's Portfolio
 
 My personal portfolio website showcasing my skills, projects, and contact information.
@@ -26,3 +27,7 @@ My personal portfolio website showcasing my skills, projects, and contact inform
 - Email: rutendosengera0701@gmail.com
 - LinkedIn: [linkedin.com/in/rutendosengera](https://linkedin.com/in/rutendosengera)
 - GitHub: [github.com/TENDOCODEX](https://github.com/TENDOCODEX)
+=======
+# my-personal-portifolio
+My personal portfolio website showcasing my skills, projects, and contact information.
+>>>>>>> c6d79bb313af7866cf5d3c0ac021adcdc633c8e5
