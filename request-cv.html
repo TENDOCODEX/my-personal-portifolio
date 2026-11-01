@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request My CV - Rutendo Sengera</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="request-cv-page">
+
+    <header class="request-header">
+        <nav>
+            <a href="index.html" class="brand">Rutendo<span>.</span></a>
+
+            <a href="about.html" class="back-link">← Back to About</a>
+        </nav>
+    </header>
+
+    <main class="request-main">
+
+        <section class="request-container">
+
+            <div class="request-heading">
+                <p class="request-eyebrow">LET'S CONNECT</p>
+
+                <h1>Request My <span>CV</span></h1>
+
+                <p>
+                    Thank you for your interest in my professional
+                    background. Complete the form below and I'll
+                    get back to you with my CV.
+                </p>
+            </div>
+
+            <form class="request-form"
+                  action="https://formsubmit.co/rutendosengera0701@gmail.com"
+                  method="POST">
+
+                <input type="hidden" name="_subject"
+                       value="New CV Request - Portfolio Website">
+
+                  <input type="hidden" name="_next"
+                      value="https://tendocodex.github.io/portfolio/thank-you.html">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_template" value="table">
+
+                <div class="request-field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Full Name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="request-field">
+                    <label for="email">Email Address</label>
+                          <input type="email" id="email" name="_replyto"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div class="request-field">
+                    <label for="organisation">Company / Organisation</label>
+                    <input type="text" id="organisation"
+                           name="Organisation"
+                           placeholder="Enter company or organisation">
+                </div>
+
+                <div class="request-field">
+                    <label for="purpose">Purpose of Request</label>
+                    <select id="purpose" name="Purpose" required>
+                        <option value="">Select a purpose</option>
+                        <option value="ICT Attachment">ICT Attachment</option>
+                        <option value="Employment">Employment</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Freelance Opportunity">Freelance Opportunity</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="request-field">
+                    <label for="message">Additional Message</label>
+                    <textarea id="message" name="Message"
+                              rows="5"
+                              placeholder="Tell me a little more about your request..."></textarea>
+                </div>
+
+                <button type="submit" class="request-submit">
+                    Submit Request <span>↗</span>
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
