@@ -338,7 +338,7 @@ body {
         position: relative;
         z-index: 0;
         inset: auto;
-        height: 340px;
+        height: 270px;
     }
 
     .hero-image img {
@@ -396,7 +396,7 @@ body {
     }
 
     .hero-image {
-        height: 300px;
+        height: 250px;
     }
 
     .hero-text h1 {
@@ -2887,5 +2887,481 @@ body {
 
     .thankyou-container h1 {
         font-size: 35px;
+    }
+}
+
+/* =========================================
+   FINAL MOBILE RESPONSIVENESS IMPROVEMENTS
+   ========================================= */
+
+/* Prevent horizontal overflow */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+
+    /* Shared navigation */
+    .about-header,
+    .skills-header {
+        padding: 16px 5%;
+    }
+
+    .about-header nav,
+    .skills-header nav,
+    .portfolio-header nav,
+    .graphic-header nav,
+    .contact-header nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .about-nav,
+    .skills-nav,
+    .portfolio-nav,
+    .graphic-nav,
+    .contact-nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .about-nav a,
+    .skills-nav a,
+    .portfolio-nav a,
+    .graphic-nav a,
+    .contact-nav a {
+        font-size: 13px;
+    }
+
+    /* About page */
+    .about-main {
+        width: 92%;
+    }
+
+    .about-layout {
+        padding-top: 35px;
+    }
+
+    .about-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-right {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about-cards {
+        gap: 12px;
+    }
+
+    .about-card {
+        padding: 16px;
+    }
+
+    /* Skills page */
+    .skills-main {
+        width: 92%;
+    }
+
+    .skills-hero {
+        padding: 45px 0 30px;
+    }
+
+    .skill-category {
+        padding: 20px;
+    }
+
+    /* Portfolio page */
+    .portfolio-hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .projects-section,
+    .hackathons-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .design-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Graphic gallery */
+    .graphic-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .graphic-cta {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Contact page */
+    .contact-main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contact-bottom {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Request CV */
+    .request-header {
+        padding: 20px 5%;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    /* Shared brand */
+    .home-header .brand,
+    .about-header .brand,
+    .skills-header .brand,
+    .portfolio-header .brand,
+    .graphic-brand,
+    .contact-brand,
+    .request-header .brand {
+        font-size: 21px;
+    }
+
+    /* Homepage */
+    .hero-text {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(40px, 12vw, 50px);
+    }
+
+    .hero-text .intro {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .home-page .buttons {
+        flex-direction: column;
+    }
+
+    .home-page .buttons button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* About page */
+    .about-left h1 {
+        font-size: 43px;
+    }
+
+    .about-eyebrow {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .about-actions {
+        flex-direction: column;
+    }
+
+    .about-actions a {
+        width: 100%;
+    }
+
+    .about-right {
+        min-height: 390px;
+    }
+
+    .portrait-frame {
+        width: min(270px, 75vw);
+        height: 340px;
+    }
+
+    .portrait-circle {
+        width: min(270px, 75vw);
+        height: min(270px, 75vw);
+    }
+
+    .floating-card {
+        gap: 7px;
+        padding: 8px;
+    }
+
+    .floating-card p {
+        font-size: 10px;
+    }
+
+    .floating-card span {
+        font-size: 20px;
+    }
+
+    .code-card {
+        left: 0;
+        top: 35px;
+    }
+
+    .idea-card {
+        right: 0;
+        top: 35px;
+    }
+
+    .about-quote {
+        right: 0;
+        bottom: 0;
+        width: 175px;
+    }
+
+    .about-cards,
+    .about-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    /* Skills page */
+    .skills-hero h1 {
+        font-size: 42px;
+    }
+
+    .skills-eyebrow {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .skills-summary {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .skills-summary div {
+        padding: 13px 9px;
+    }
+
+    .skills-summary p {
+        font-size: 12px;
+    }
+
+    .skill-category-heading h2 {
+        font-size: 16px;
+    }
+
+    .skills-cta {
+        padding: 22px;
+    }
+
+    .skills-cta a {
+        white-space: normal;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Portfolio page */
+    .portfolio-hero h1 {
+        font-size: 39px;
+    }
+
+    .portfolio-hero-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .portfolio-section-heading h2 {
+        font-size: 27px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .project-info {
+        padding: 17px;
+    }
+
+    .design-section {
+        padding: 15px;
+    }
+
+    .design-preview-content h2 {
+        font-size: 24px;
+    }
+
+    .design-gallery-btn,
+    .cta-button {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio-cta {
+        padding: 22px;
+    }
+
+    /* Graphic design gallery */
+    .graphic-hero {
+        padding: 50px 5% 40px;
+    }
+
+    .graphic-hero h1 {
+        font-size: 38px;
+    }
+
+    .graphic-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .graphic-grid,
+    .branding-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-image {
+        height: 320px;
+    }
+
+    .branding-image {
+        height: 240px;
+    }
+
+    .graphic-cta {
+        padding: 22px;
+    }
+
+    .graphic-cta h2 {
+        font-size: 23px;
+    }
+
+    .graphic-cta-button {
+        white-space: normal;
+        text-align: center;
+        width: 100%;
+    }
+
+    .graphic-lightbox {
+        padding: 45px 15px;
+    }
+
+    .lightbox-close {
+        right: 15px;
+    }
+
+    .lightbox-prev {
+        left: 5px;
+    }
+
+    .lightbox-next {
+        right: 5px;
+    }
+
+    /* Contact page */
+    .contact-hero {
+        padding: 50px 5% 40px;
+    }
+
+    .contact-hero h1 {
+        font-size: 38px;
+    }
+
+    .contact-details h2 {
+        font-size: 26px;
+    }
+
+    .contact-form-container {
+        padding: 18px;
+    }
+
+    .contact-bottom h2 {
+        font-size: 23px;
+    }
+
+    /* Request CV page */
+    .request-heading h1 {
+        font-size: 27px;
+    }
+
+    .request-container {
+        padding: 22px 16px;
+    }
+
+    /* Thank you page */
+    .thankyou-container {
+        padding: 35px 18px;
+    }
+
+    .thankyou-container h1 {
+        font-size: 32px;
+    }
+
+    .thankyou-message {
+        font-size: 15px;
+    }
+
+    .thankyou-actions {
+        flex-direction: column;
+    }
+
+    .thankyou-actions a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .home-header .home-nav,
+    .about-nav,
+    .skills-nav,
+    .portfolio-nav,
+    .graphic-nav,
+    .contact-nav {
+        gap: 8px 12px;
+    }
+
+    .home-header .home-nav a,
+    .about-nav a,
+    .skills-nav a,
+    .portfolio-nav a,
+    .graphic-nav a,
+    .contact-nav a {
+        font-size: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .skills-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
     }
 }
